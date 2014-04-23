@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="fr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>MiniProj:C:2014 - wiki-prog</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.18.1">
+<link rel="shortcut icon" href="http://wiki-prog.infoprepa.epita.fr/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wiki-prog.infoprepa.epita.fr/opensearch_desc.php" title="wiki-prog (fr)">
+<link rel="EditURI" type="application/rsd+xml" href="http://wiki-prog.infoprepa.epita.fr/api.php?action=rsd">
+<link rel="alternate" type="application/atom+xml" title="Flux Atom de wiki-prog" href="http://wiki-prog.infoprepa.epita.fr/index.php?title=Sp%C3%A9cial:Modifications_r%C3%A9centes&amp;feed=atom">
+<link rel="stylesheet" href="MiniProj:C:2014%20-%20wiki-prog_files/load.css">
+<link rel="stylesheet" href="MiniProj:C:2014%20-%20wiki-prog_files/embednews.css"><style type="text/css" media="all">.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+
+/* cache key: wikiprog:resourceloader:filter:minify-css:4:4250852ed2349a0d4d0fc6509a3e7d4c */
+</style><style type="text/css" media="all">.js-messagebox{margin:1em 5%;padding:0.5em 2.5%;border:1px solid #ccc;background-color:#fcfcfc;font-size:0.8em}.js-messagebox .js-messagebox-group{margin:1px;padding:0.5em 2.5%;border-bottom:1px solid #ddd}.js-messagebox .js-messagebox-group:last-child{border-bottom:thin none transparent}
+
+/* cache key: wikiprog:resourceloader:filter:minify-css:4:8b08bdc91c52a9ffba396dccfb5b473c */
+</style><style type="text/css" media="all">.suggestions{overflow:hidden;position:absolute;top:0px;left:0px;width:0px;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;background-color:Window;font-size:0.8em;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;color:WindowText;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;background-color:Highlight;color:white;color:HighlightText}.suggestions-special .special-label{font-size:0.8em;color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white;color:HighlightText}.autoellipsis-matched,.highlight{font-weight:bold}
+
+/* cache key: wikiprog:resourceloader:filter:minify-css:4:1421bbe1922a44daa3fbb100d858b3d8 */
+</style><style type="text/css" media="all">#mw-panel.collapsible-nav div.portal{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAABCAMAAAA7MLYKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtQTFRF29vb2tra4ODg6urq5OTk4uLi6+vr7e3t7Ozs8PDw5+fn4+Pj4eHh3d3d39/f6Ojo5eXl6enp8fHx8/Pz8vLy7+/v3Nzc2dnZ2NjYnErj7QAAAD1JREFUeNq0wQUBACAMALDj7hf6JyUFGxzEnYhC9GaNPG1xVffGDErk/iCigLl1XV2xM49lfAxEaSM+AQYA9HMKuv4liFQAAAAASUVORK5CYII=);background-image:url(http://wiki-prog.infoprepa.epita.fr/extensions/Vector/modules/images/portal-break.png?2012-02-27T10:43:20Z)!ie;background-position:left top;background-repeat:no-repeat;padding:0.25em 0 !important;margin:-11px 9px 10px 11px}#mw-panel.collapsible-nav div.portal h5{color:#4D4D4D;font-weight:normal;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9QTFRFeXl53d3dmpqasbGx////GU0iEgAAAAV0Uk5T/////wD7tg5TAAAAK0lEQVQI12NwgQIG0hhCDAwMTCJAhqMCA4MiWEoIJABiOCooQhULi5BqMgB2bh4svs8t+QAAAABJRU5ErkJggg==) left center no-repeat;background:url(http://wiki-prog.infoprepa.epita.fr/extensions/Vector/modules/images/open.png?2012-02-27T10:43:20Z) left center no-repeat!ie;padding:4px 0 3px 1.5em;margin-bottom:0px}#mw-panel.collapsible-nav div.collapsed h5{color:#0645AD;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAxQTFRF3d3deXl5////nZ2dQA6SoAAAAAN0Uk5T//8A18oNQQAAADNJREFUeNpiYEIDDMQKMKALMDOgCTDCRWACcBG4AEwEIcDITEAFuhnotmC4g4EEzwEEGAADqgHmQSPJKgAAAABJRU5ErkJggg==) left center no-repeat;background:url(http://wiki-prog.infoprepa.epita.fr/extensions/Vector/modules/images/closed-ltr.png?2012-02-27T10:43:20Z) left center no-repeat!ie;margin-bottom:0px}#mw-panel.collapsible-nav div h5:hover{cursor:pointer;text-decoration:none}#mw-panel.collapsible-nav div.collapsed h5:hover{text-decoration:underline}#mw-panel.collapsible-nav div.portal div.body{background:none !important;padding-top:0px;display:none}#mw-panel.collapsible-nav div.persistent div.body{display:block}#mw-panel.collapsible-nav div.first h5{display:none}#mw-panel.collapsible-nav div.persistent h5{background:none !important;padding-left:0.7em;cursor:default}#mw-panel.collapsible-nav div.portal div.body ul li{padding:0.25em 0}#mw-panel.collapsible-nav div.first{background-image:none;margin-top:0px}#mw-panel.collapsible-nav div.persistent div.body{margin-left:0.5em}
+
+/* cache key: wikiprog:resourceloader:filter:minify-css:4:572b7a3d342edf924fcee9e49d52d7ed */
+</style><meta name="ResourceLoaderDynamicStyles" content="">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: wikiprog:resourceloader:filter:minify-css:4:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+<script src="MiniProj:C:2014%20-%20wiki-prog_files/load_004.php"></script><script src="MiniProj:C:2014%20-%20wiki-prog_files/load_003.php"></script>
+<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "MiniProj:C:2014", "wgTitle": "MiniProj:C:2014", "wgCurRevisionId": 2653, "wgArticleId": 532, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": [], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgVectorEnabledModules": {"collapsiblenav": true, "collapsibletabs": true, "editwarning": false, "expandablesearch": false, "footercleanup": false, "sectioneditlinks": false, "simplesearch": true, "experiments": true}, "wgWikiEditorEnabledModules": {"toolbar": false, "dialogs": false, "hidesig": true, "templateEditor": false, "templates": false, "preview": false, "previewDialog": false, "publish": false, "toc": false}});
+}
+</script><script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script><script type="text/javascript" src="MiniProj:C:2014%20-%20wiki-prog_files/load_002.php"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-c {line-height: normal;}
+.source-c li, .source-c pre {
+	line-height: normal; border: 0px none white;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for c
+ * CSS class: source-c, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.c.source-c  {font-family:monospace;}
+.c.source-c .imp {font-weight: bold; color: red;}
+.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
+.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.c.source-c .li2 {font-weight: bold; vertical-align:top;}
+.c.source-c .kw1 {color: #b1b100;}
+.c.source-c .kw2 {color: #000000; font-weight: bold;}
+.c.source-c .kw3 {color: #000066;}
+.c.source-c .kw4 {color: #993333;}
+.c.source-c .co1 {color: #666666; font-style: italic;}
+.c.source-c .co2 {color: #339933;}
+.c.source-c .coMULTI {color: #808080; font-style: italic;}
+.c.source-c .es0 {color: #000099; font-weight: bold;}
+.c.source-c .es1 {color: #000099; font-weight: bold;}
+.c.source-c .es2 {color: #660099; font-weight: bold;}
+.c.source-c .es3 {color: #660099; font-weight: bold;}
+.c.source-c .es4 {color: #660099; font-weight: bold;}
+.c.source-c .es5 {color: #006699; font-weight: bold;}
+.c.source-c .br0 {color: #009900;}
+.c.source-c .sy0 {color: #339933;}
+.c.source-c .st0 {color: #ff0000;}
+.c.source-c .nu0 {color: #0000dd;}
+.c.source-c .nu6 {color: #208080;}
+.c.source-c .nu8 {color: #208080;}
+.c.source-c .nu12 {color: #208080;}
+.c.source-c .nu16 {color:#800080;}
+.c.source-c .nu17 {color:#800080;}
+.c.source-c .nu18 {color:#800080;}
+.c.source-c .nu19 {color:#800080;}
+.c.source-c .me1 {color: #202020;}
+.c.source-c .me2 {color: #202020;}
+.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
+.c.source-c span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/skins/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-MiniProj_C_2014 action-view skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div class="js-messagebox" id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">MiniProj:C:2014</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">De wiki-prog.</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					Aller à : <a href="#mw-head">Navigation</a>,
+					<a href="#p-search">rechercher</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div dir="ltr" class="mw-content-ltr" lang="fr"><table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Sommaire</h2><span class="toctoggle">&nbsp;[<a href="#" class="internal" id="togglelink">masquer</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#I_Want_Out_.21"><span class="tocnumber">1</span> <span class="toctext">I Want Out&nbsp;!</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Pr.C3.A9sentation_des_donjons"><span class="tocnumber">1.1</span> <span class="toctext">Présentation des donjons</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Le_niveau_de_vie_de_l.27explorateur"><span class="tocnumber">1.2</span> <span class="toctext">Le niveau de vie de l'explorateur</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="#Le_mini-projet"><span class="tocnumber">2</span> <span class="toctext">Le mini-projet</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="#Format_du_fichier_de_description_du_donjon"><span class="tocnumber">2.1</span> <span class="toctext">Format du fichier de description du donjon</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Format_des_chemins"><span class="tocnumber">2.2</span> <span class="toctext">Format des chemins</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Affichage_du_co.C3.BBt_d.27un_chemin"><span class="tocnumber">2.3</span> <span class="toctext">Affichage du coût d'un chemin</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Recherche_de_chemin"><span class="tocnumber">2.4</span> <span class="toctext">Recherche de chemin</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Votre_programme"><span class="tocnumber">2.5</span> <span class="toctext">Votre programme</span></a>
+<ul>
+<li class="toclevel-3 tocsection-10"><a href="#Exemple_de_session_de_tests"><span class="tocnumber">2.5.1</span> <span class="toctext">Exemple de session de tests</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-11"><a href="#Votre_rendu"><span class="tocnumber">2.6</span> <span class="toctext">Votre rendu</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Dates"><span class="tocnumber">2.7</span> <span class="toctext">Dates</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="#.C3.89valution"><span class="tocnumber">3</span> <span class="toctext">Évalution</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="#Niveau_0:_rendu"><span class="tocnumber">3.1</span> <span class="toctext">Niveau 0: rendu</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Niveau_1:_validation.2F.C3.A9valuation_de_chemin"><span class="tocnumber">3.2</span> <span class="toctext">Niveau 1: validation/évaluation de chemin</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Niveau_2_et_3:_recherche_de_chemin_et_mont.C3.A9e_en_charge"><span class="tocnumber">3.3</span> <span class="toctext">Niveau 2 et 3: recherche de chemin et montée en charge</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="#Niveau_2:_Chemins_simples"><span class="tocnumber">3.3.1</span> <span class="toctext">Niveau 2: Chemins simples</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="#Niveau_3:_mont.C3.A9e_en_charge"><span class="tocnumber">3.3.2</span> <span class="toctext">Niveau 3: montée en charge</span></a>
+<ul>
+<li class="toclevel-4 tocsection-19"><a href="#Support_des_circuits_absorbants"><span class="tocnumber">3.3.2.1</span> <span class="toctext">Support des circuits absorbants</span></a></li>
+<li class="toclevel-4 tocsection-20"><a href="#Longs_chemins"><span class="tocnumber">3.3.2.2</span> <span class="toctext">Longs chemins</span></a></li>
+<li class="toclevel-4 tocsection-21"><a href="#Sessions_longues"><span class="tocnumber">3.3.2.3</span> <span class="toctext">Sessions longues</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="#Conseils"><span class="tocnumber">4</span> <span class="toctext">Conseils</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="#Strat.C3.A9gie_de_r.C3.A9alisation_du_projet"><span class="tocnumber">4.1</span> <span class="toctext">Stratégie de réalisation du projet</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Repr.C3.A9sentation_des_graphes"><span class="tocnumber">4.2</span> <span class="toctext">Représentation des graphes</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Plus_courts_chemins"><span class="tocnumber">4.3</span> <span class="toctext">Plus courts chemins</span></a>
+<ul>
+<li class="toclevel-3 tocsection-26"><a href="#Exemple"><span class="tocnumber">4.3.1</span> <span class="toctext">Exemple</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="#Algorithmes_exploitables"><span class="tocnumber">4.3.2</span> <span class="toctext">Algorithmes exploitables</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-28"><a href="#Le_tournoi_de_la_guilde_des_donjons"><span class="tocnumber">5</span> <span class="toctext">Le tournoi de la guilde des donjons</span></a></li>
+</ul>
+</td></tr></tbody></table>
+<h2> <span class="mw-headline" id="I_Want_Out_.21"> <i>I Want Out&nbsp;!</i> </span></h2>
+<dl><dd><i> Doctor Stein grows funny creatures and let them run into the night&nbsp;! ... </i>
+</dd></dl>
+<p>Le docteur Stein élève des droles de créatures dont l'objectif est 
+d'explorer des donjons. Il a décidé de se limiter aux donjons de la 
+guilde des explorateurs amateurs pour lesquels une carte est fournie. 
+Mais la carte n'est pas toujours suffisante, il faut que le docteur 
+fournisse un chemin à suivre à ses créatures&nbsp;!
+</p><p>Votre objectif est de fournir au Docteur Stein un chemin sûr 
+(c'est à dire un chemin où il ne perd pas la vie) dans le donjon entre 
+deux salles particulières du donjon. L'idéal étant que ce chemin soit le
+ plus court.
+</p>
+<h3> <span class="mw-headline" id="Pr.C3.A9sentation_des_donjons"> Présentation des donjons </span></h3>
+<p>Les donjons de la guilde des explorateurs amateurs ont une forme 
+commune: il dispose de certains types de salles (voir plus loin) reliées
+ entre elles par des couloirs. La traversée d'un couloir est plus ou 
+moins difficile et la difficulté est indiquée sur la carte. La 
+difficulté d'un couloir peut dépendre du sens de parcours, il est même 
+possible que certains couloirs ne puissent être franchis que dans un 
+sens. Chaque salle porte un numéro unique dans le donjon qui permet de 
+les identifier facilement. Les différents types de salles sont les 
+suivants:
+</p>
+<ul><li> Salle ordinaire
+</li><li> Tannière de monstre: un monstre se cache dans ces salles, la carte indique le coût du combat contre le monstre.
+</li><li> Piège mortelle: ces salles sont des <i>culs-de-sac</i> dont il est impossible de repartir (entrainnant la mort de l'explorateur s'il a le malheur de s'y rendre.)
+</li><li> Gargotte: les gargottes des donjons sont tenues par les gnomes
+ de la guilde et permettent aux explorateurs de retrouver des forces 
+pendant leur exploration. Chaque gargotte propose un menu unique 
+(toujours disponible) dont l'effet revigorant est indiqué sur la carte.
+</li></ul>
+<h3> <span class="mw-headline" id="Le_niveau_de_vie_de_l.27explorateur"> Le niveau de vie de l'explorateur </span></h3>
+<p>Chaque explorateur de donjons dispose d'un certain niveau de vie au 
+début de sa quête. L'unité de mesure des niveaux de vie a été unifiée 
+avec les niveaux de difficultés des couloirs, le niveau des monstres et 
+l'apport des repas des gargottes. Par conséquent, il est très simple de 
+calculer le coût d'un chemin d'une salle à une autre dans le donjon et 
+de le comparer au niveau de vie de l'explorateur.
+</p><p>L'explorateur meurt lorsque son niveau de vie tombe à 0 (ou en 
+dessous) dans la salle d'arrivée. Notamment, lorsque l'explorateur 
+arrive dans une gargotte, il ne meurt que si son niveau de vie n'est 
+plus positif <b>après</b> avoir <i>manger</i>.
+</p>
+<h2> <span class="mw-headline" id="Le_mini-projet"> Le mini-projet </span></h2>
+<p>Comme vous l'aurez compris il s'agit ici de trouver des chemins dans un graphe. Le projet se découpe en plusieures phases:
+</p>
+<ol><li> Lecture du graphe à partir d'un fichier et validation de chemin (<i>4 points</i>);
+</li><li> Recherche de chemin simple dans le graphe (<i>5 points</i>);
+</li><li> Résistance et montée en charge (<i>9 points</i>).
+</li></ol>
+<p>En outre, deux points seront accordés au respect des règles de rendu (rendu dans les temps et au format attendu.)
+</p>
+<h3> <span class="mw-headline" id="Format_du_fichier_de_description_du_donjon"> Format du fichier de description du donjon </span></h3>
+<p>Le format de description est un format texte relativement simple:
+</p>
+<ul><li> Les salles sont numérotées de manière continue à partir de 1
+</li><li> Les coûts sont des entiers sur 64bits signés (même si dans les fichiers, ils seront toujours exprimés positivement.)
+</li><li> Les lignes commençant par le caractère "<tt>#</tt>" sont des commentaires et doivent être ignorées
+</li><li> Les lignes vides doivent être ignorées
+</li><li> La première ligne ayant du sens (ni vide, ni commentaire) doit avoir la forme "<tt>ROOMS: n</tt>" où <tt>n</tt> est un entier strictement positif représentant le nombre de salles du donjon.
+</li><li> Les lignes suivantes indiquent quels types de salles sont disponibles. Elles ont la forme suivante:
+<ul><li> "<tt>MONSTER: s c</tt>" indique que la salle <tt>s</tt> contient un monstre de niveau <tt>c</tt>.
+</li><li> "<tt>DEAD: s</tt>" indique que la salle <tt>s</tt> est un piège mortelle.
+</li><li> "<tt>BREWERY: s c</tt>" indique que la salle <tt>s</tt> est une gargotte qui sert un menu de niveau <tt>c</tt>
+</li><li> Les salles qui n'apparaissent pas dans l'une des catégories sont des salles ordinaires.
+</li></ul>
+</li><li> Une fois que toutes les salles sont décrites, on peut lister les couloirs. La partie couloirs est introduites par la ligne "<tt>TUNNELS</tt>"
+</li><li> Chaque couloir est décrit par une ligne de la forme: "<tt>TUNNEL: s1 c s2</tt>" indiquant l'existance d'un couloir de la salle <tt>s1</tt> jusqu'à <tt>s2</tt> avec pour coût <tt>c</tt>.
+</li></ul>
+<div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Fichier:Donjon1.png" class="image"><img alt="" src="MiniProj:C:2014%20-%20wiki-prog_files/180px-Donjon1.png" class="thumbimage" width="180" height="245"></a>  <div class="thumbcaption"><div class="magnify"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Fichier:Donjon1.png" class="internal" title="Agrandir"><img src="MiniProj:C:2014%20-%20wiki-prog_files/magnify-clip.png" alt="" width="15" height="11"></a></div>Un donjon</div></div></div>
+<p>Voici un exemple de description de donjon:
+</p>
+<pre># Salles
+ROOMS: 10
+MONSTER: 4 4
+MONSTER: 9 20
+BREWERY: 7 5
+DEAD: 3
+
+# couloirs
+TUNNELS
+TUNNEL: 1 1 2
+TUNNEL: 1 1 3
+TUNNEL: 2 1 4
+TUNNEL: 2 1 5
+TUNNEL: 3 30 6
+TUNNEL: 4 1 5
+TUNNEL: 5 6 2
+TUNNEL: 5 1 6
+TUNNEL: 6 1 7
+TUNNEL: 7 1 8
+TUNNEL: 8 1 6
+TUNNEL: 8 1 9
+TUNNEL: 9 1 10
+</pre>
+<dl><dd><b>Remarque:</b> la guilde garantie des cartes bien formées, vous n'aurez donc <b>pas</b> à gérer les erreurs de parsing.
+</dd></dl>
+<h3> <span class="mw-headline" id="Format_des_chemins"> Format des chemins </span></h3>
+<p>Les chemins seront représenté par le format suivant: <tt>[s1;...;sn]</tt> (sans espace) où les <tt>si</tt> sont les numéros des salles traversées par le chemin <b>dans l'ordre</b>
+ (bien sûr.) On notera au passage que le format des chemins correspond à
+ l'affichage d'une liste, votre programme devra donc supporté la 
+présence éventuelle d'un point-virgule suplémentaire à la fin, par 
+exemple les chaînes suivantes sont toutes les deux des chemins valides 
+(elles représentent le même chemin):
+</p>
+<pre>[1;2;3]
+[1;2;3;]
+</pre>
+<p><br>
+</p>
+<h3> <span class="mw-headline" id="Affichage_du_co.C3.BBt_d.27un_chemin"> Affichage du coût d'un chemin </span></h3>
+<p>Lorsque l'utilisateur rentre la commande <tt>COST v [s1;..;sn]</tt>, vous devez calculer le coût (et la longueur, en sommet) du chemin avec <tt>v</tt> points de vie au départ. L'affichage se fera de la manière suivante:
+</p>
+<ul><li> <tt>(c,l)</tt> si le nombre de points de vie était suffisant, <tt>c</tt> est le nombre points de vie restant à la fin du chemin et <tt>l</tt> est la longueur du chemin (nombre de sommets.)
+</li><li> <tt>DEAD</tt> si le nombre de point de vie n'était pas suffisant, où si le chemin contient un piège mortel.
+</li><li> <tt>NP</tt> si le chemin n'est pas valide (salle inexistante, pas de couloir permettant le parcours ... )
+</li></ul>
+<p>Voici un exemple de <i>session</i> sur le graphe décrit plus haut:
+</p>
+<pre>COST 10 [1;2;4;]
+(4,3)
+COST 1 [1;2;4;]
+DEAD
+COST 2 [1;4]
+NP
+</pre>
+<h3> <span class="mw-headline" id="Recherche_de_chemin"> Recherche de chemin </span></h3>
+<p>La commande <tt>PATH v s e</tt> demande à votre programme de chercher un chemin entre la salle <tt>s</tt> et la salle <tt>e</tt> avec <tt>v</tt> point de vie au départ. Votre programme devra alors soit afficher le chemin, soit afficher <tt>NP</tt> s'il n'existe pas de chemin possible (pas de couloir, pas assez de point de vie ... )
+</p>
+<h3> <span class="mw-headline" id="Votre_programme"> Votre programme </span></h3>
+<p>Votre programme devra s'appeler <tt>stein</tt> et prendra en 
+paramètre le nom du fichier de description du donjon. Une fois le donjon
+ lu, il devra attendre une commande sur son entrée standard:
+</p>
+<ul><li> <tt>COST v [s1;...;sn]</tt> lui demandera de calculer le coût du chemin.
+</li><li> <tt>PATH v s e</tt> lui demandera la recherche d'un plus court chemin.
+</li></ul>
+<p>Après l'exécution de la commande, votre programme affiche le résultat
+ (en fonction de la commande) et attend une nouvelle entrée. Le 
+programme devra quitter à la réception du caractère de fin de fichier 
+(que l'on peut envoyer depuis le shell en faisant <tt>^D</tt>.)
+</p><p>Comme d'habitude, vous devez respecter les formats d'affichage 
+pour que la moulinette reconnaisse votre résultat (attention aux espaces
+ et aux majuscules/minuscules.)
+</p>
+<h4> <span class="mw-headline" id="Exemple_de_session_de_tests"> Exemple de session de tests </span></h4>
+<p>On considère le graphe décrit précédemment sauvé dans le fichier <tt>graphe.dj</tt>. On regroupera les tests dans le fichier <tt>test-graphe</tt> dont le contenu est le suivant:
+</p>
+<pre>COST 10 [1;2;5;6;7;8;9;10]
+COST 10 [1;2;5;6;7;8;6;7;8;6;7;8;6;7;8;6;7;8;6;7;8;6;7;8;6;7;8;9;10]
+COST 10 [1;3;6;7;8;9;10]
+COST 10 [1;2;6;8;9;10]
+PATH 10 1 4
+</pre>
+<p>Enfin, le test du programme donnera les résultats suivants:
+</p>
+<pre>&gt; ./stein graphe.dj &lt; test-graphe
+DEAD
+(2,29)
+DEAD
+NP
+[1;2;4]
+&gt;
+</pre>
+<h3> <span class="mw-headline" id="Votre_rendu"> Votre rendu </span></h3>
+<p>Vous rendrez une archive sous la forme: <tt>login-donjon2014.tar.bz2</tt> cette archive doit se décompresser dans un répertoire dont le nom est <tt>login-donjon2014</tt> contenant:
+</p>
+<ul><li> Un fichier <tt>AUTHORS</tt> au format <i>habituel</i>.
+</li><li> Un makefile qui accepte les cibles <tt>all</tt>, <tt>stein</tt> et <tt>clean</tt>
+</li><li> Votre code source.
+</li></ul>
+<p>Pour information la moulinette procedera comme suit:
+</p>
+<pre>tar xf login-donjon2014.tar.bz2
+cd login-donjon2014
+make clean
+make
+</pre>
+<p>Puis effectuera les tests sur le binaire <tt>stein</tt>.
+</p>
+<dl><dd> <i>Note:</i> format du fichier <tt>AUTHORS</tt><br>Ce fichier contient une ligne (vous êtes seul sur le projet) commençant par une étoile (<tt>*</tt>) suivie d'un espace puis de votre login, le reste de la ligne est ignoré. Attention, votre fichier ne devra contenir <b>qu'une seule ligne</b> et celle-ci devra être correctement terminée (saut de ligne.) Par exemple:
+</dd></dl>
+<pre>&gt; whoami
+foo_b
+&gt; cat AUTHORS
+* foo_b (Foo Bar)
+&gt; cat -e AUTHORS
+* foo_b (Foo Bar)$
+&gt;
+</pre>
+<h3> <span class="mw-headline" id="Dates"> Dates </span></h3>
+<p>Le rendu du projet est prévu pour le <b>Vendredi 18 avril 2014 à 23h42</b>.
+ L'interface de rendu sera ouverte à partir du dimanche 13 avril 19h42. 
+Un lien vers celle-ci sera fournie le jour même ici et sur la page 
+d’accueil.
+</p>
+<dl><dd> <b>Le rendu se fait ici&nbsp;: <a rel="nofollow" class="external autonumber" href="http://rendu.infoprepa.epita.fr/EPITA2017/index.php?TP=20140418">[1]</a></b>
+</dd></dl>
+<h2> <span class="mw-headline" id=".C3.89valution"> Évalution </span></h2>
+<p>La moulinette effectue les évaluations <i>en cascade</i>. Chaque phase est testée avec un certain nombre de cas et le taux de réussite donne la note de la <i>phase</i>.
+</p><p>On rappelle que les évaluations sont automatiques et sont basées sur les sorties décrites dans le présent sujet. <b>Si vous ne respectez pas les formats attendus, vous n'aurez pas les points.</b> Faîtes donc bien attention à vos affichages, aucune réclamation ne sera acceptée.
+</p>
+<h3> <span class="mw-headline" id="Niveau_0:_rendu"> Niveau 0: rendu </span></h3>
+<dl><dd> <i>(2 points)</i>
+</dd></dl>
+<p>Cette phase est le point de passage <b>obligatoire</b>. Elle n'est pas validée si (pas de points):
+</p>
+<ul><li> le fichier <tt>AUTHORS</tt> manque ou est mal formé
+</li></ul>
+<p>De plus, les autres niveaux ne sont pas évalués si:
+</p>
+<ul><li> l'archive n'est pas au format tar+bzip2
+</li><li> l'archive ne se décompresse pas du tout;
+</li><li> l'archive ne se décompresse pas dans la bon répertoire;
+</li><li> il n'y a pas de <tt>Makefile</tt>;
+</li><li> l'une des règles attendue dans le <tt>Makefile</tt> ne marche pas;
+</li><li> le binaire produit ne porte pas le bon nom.
+</li></ul>
+<p>En particulier, vous devez vous assurez que la séquence d'action suivante se déroule sans erreur:
+</p>
+<pre>tar xjf login-donjon2014.tar.bz2 login-donjon2014
+cd login-donjon2014
+make clean
+make
+</pre>
+<p>Si aucune erreur n'arrête cette séquence et que le répertoire courant contient bien un binaire exécutable appelé <tt>stein</tt>, alors la moulinette passe aux étapes suivantes.
+</p>
+<dl><dd> <i>Note:</i> la commande <tt>make clean</tt> ne doit pas 
+échouer, même si les fichiers qu'elle tente d'effacer n'existent pas. 
+Pour s'assurer que tout va bien, essayer de faire <tt>make clean &amp;&amp; make clean</tt>, s'il n'y a pas de message d'erreur, tout va bien. Sinon, en géneral, <tt>man 1 rm</tt> est une bonne piste …
+</dd></dl>
+<h3> <span class="mw-headline" id="Niveau_1:_validation.2F.C3.A9valuation_de_chemin"> Niveau 1: validation/évaluation de chemin </span></h3>
+<dl><dd> <i>(4 points)</i>
+</dd></dl>
+<p>Cette phase sert principalement à vérifier que vous êtes capable de 
+charger un graphe. Elle est évaluée par deux séries de tests simples:
+</p>
+<ul><li> Test avec une commande par <i>session</i>
+</li><li> Tests avec plusieurs commandes par <i>session</i>
+</li></ul>
+<p>Dans tous les cas, la seule commande utilisée sera <tt>COST</tt>.
+</p>
+<h3> <span class="mw-headline" id="Niveau_2_et_3:_recherche_de_chemin_et_mont.C3.A9e_en_charge"> Niveau 2 et 3: recherche de chemin et montée en charge </span></h3>
+<p>Les deux derniers niveaux sont testés suivants le même schéma global.
+ Pour chaque test, un graphe est chargé puis on demande un chemin dans 
+ce graphe. Le résultat de chaque test est calculé comme suit:
+</p>
+<ul><li> 0 points si votre programme <i>ne répond pas</i> (erreur d'exécution, <i>timeout</i> ... ) ou si le chemin renvoyé n'est pas valide.
+</li><li> 1 point si votre programme renvoie un chemin valide.
+</li><li> 3 points si votre programme renvoie un chemin valide et que ce chemin est <i>minimal</i> (la longueur du chemin correspond au nombre de salle du chemin.)
+</li></ul>
+<p>Enfin, une fois tous les tests passés, le nombre de points accumulés est ramené sur le nombre de points de la tranche.
+</p><p>À quelques détails prets, la différence entre chaque <i>phase</i> de tests correspond à la difficulté des cas testés.
+</p><p><b>Les chemins recherchés existeront toujours.</b>
+</p>
+<h4> <span class="mw-headline" id="Niveau_2:_Chemins_simples"> Niveau 2: Chemins simples </span></h4>
+<dl><dd> <i>(5 points)</i>
+</dd></dl>
+<p>Dans ce niveau, les chemins cherchés sont sans circuits absorbants, ce sont des chemins élémentaires (relativement <i>court</i>.)
+</p>
+<h4> <span class="mw-headline" id="Niveau_3:_mont.C3.A9e_en_charge"> Niveau 3: montée en charge </span></h4>
+<p>Ce niveau est découpé en trois parties:
+</p>
+<h5> <span class="mw-headline" id="Support_des_circuits_absorbants"> Support des circuits absorbants </span></h5>
+<dl><dd> <i>(3 points)</i>
+</dd></dl>
+<p>Comme l'explorateur peut <i>regagner</i> des points de vie, il est possible de <i>boucler</i>
+ autour des gargottes (en utilisant les circuits du graphe) pour 
+accumuler suffisament de points de vie pour passer un arc avec un fort 
+coût ou un monstre. <b>Tous les chemins cherchés dans cette partie nécessite au moins une boucle dans un circuit.</b>
+</p><p>Pour la gestion des circuits absorbants. je vous recommande la lecture des conseils un peu plus loin&nbsp;!
+</p>
+<h5> <span class="mw-headline" id="Longs_chemins"> Longs chemins </span></h5>
+<dl><dd> <i>(3 points)</i>
+</dd></dl>
+<p>Cette partie est la prolongation de la précédante, les chemins 
+recherchés contiendront forcément des circuits, mais de plus ces chemins
+ seront <b>longs</b>, au moins plusieurs centaines, voir plusieurs milliers de salles.
+</p><p>Les tests sur cette partie pouvant être relativement long, 
+ceux-ci ne seront fait sur votre projet que si votre programme trouve un
+ chemin valide pour au moins 60% des tests de la partie précédantes.
+</p>
+<h5> <span class="mw-headline" id="Sessions_longues"> Sessions longues </span></h5>
+<dl><dd> <i>(3 points)</i>
+</dd></dl>
+<p>Cette partie va tester <i>l'endurance de votre programme</i>: chaque 
+session (chaque exécution) comportera plusieurs recherches de chemin 
+(avec ou sans circuits.) Les chemins ne seront pas forcément longs, 
+l'objectif est de vérifier que vous gérer bien votre mémoire.
+</p>
+<h2> <span class="mw-headline" id="Conseils"> Conseils </span></h2>
+<p>Cette partie présente quelques conseils d'implémentation (graphes, 
+algorithmes ... ) mais ce ne sont que des conseils que vous êtes libre 
+de suivre ou pas.
+</p>
+<h3> <span class="mw-headline" id="Strat.C3.A9gie_de_r.C3.A9alisation_du_projet"> Stratégie de réalisation du projet </span></h3>
+<p>Commencons par vous rappeller quelques commandements de la programmation:
+</p>
+<dl><dd> <i>Make it right before you make it fast. Make it clear before you make it faster. Keep it right when you make it faster.</i><br>
+ - P. J. Plauger - Kernighan and Plauger, The Elements of Programming 
+Style by Brian W. Kernighan, P. J. Plauger , ISBN:0070342075
+</dd></dl>
+<dl><dd> <i>We should forget about small efficiencies, say about 97% of the time: <b>premature optimization is the root of all evil</b>.
+ Yet we should not pass up our opportunities in that critical 3%.A good 
+programmer will not be lulled into complacency by such reasoning, he 
+will be wise to look carefully at the critical code; but only after that
+ code has been identified</i><br> - Donald Knuth: Structured Programming with Goto Statements<a rel="nofollow" class="external autonumber" href="http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf">[2]</a>. Computing Surveys 6:4 (1974), 261–301
+</dd></dl>
+<dl><dd> <i>The First Rule of Program Optimization: Don't do it. The 
+Second Rule of Program Optimization (for experts only!): Don't do it 
+yet.</i><br> - Michael A. Jackson<a rel="nofollow" class="external autonumber" href="http://en.wikipedia.org/wiki/Michael_A._Jackson">[3]</a>.
+</dd></dl>
+<dl><dd> <i>More computing sins are committed in the name of efficiency 
+(without necessarily achieving it) than for any other single reason - 
+including blind stupidity.</i><br> - W.A. Wulf<a rel="nofollow" class="external autonumber" href="http://en.wikipedia.org/wiki/W.A._Wulf">[4]</a>
+</dd></dl>
+<p>Votre objectif premier est de faire marcher votre projet. L'optimisation devra venir <b>après</b>. Maintenant, il y a des stratégies plus efficace pour pouvoir optimiser facilement votre code.
+</p><p>Les conseils sont toujours les mêmes:
+</p>
+<ul><li> Modéliser correctement votre projet avant de commencer à coder.
+</li><li> Garder une approche <i>abstraite</i>, toutes vos structures de données doivent être accédées uniquement au travers d'opérations abstraites (<i>encapsulation</i>.)
+</li><li> Privilégier l'algorithme principal: les structures annexes 
+(comme les ensembles d'ouverts et de fermés) seront des points 
+d'optimisation ultérieurs.
+</li><li> Implémenter les structures secondaires en privilégiant la 
+correction avant la performance, ça vous permettra de tester votre 
+algos, une fois l'algo validé vous pourrez changer d'implémentation pour
+ vos structures.
+</li><li> Ne négliger pas la gestion de la mémoire, mais là encore, 
+garder une approche abstraite pour pouvoir changer d'allocateur lors de 
+la phase d'optimisation.
+</li><li> Le premier pallier est là pour vous aider: vous aurez besoin de vérifier vos chemins, utiliser la commande demandée (<tt>COST</tt>) pour vérifier vos chemins et obtenir leur taille.
+</li></ul>
+<h3> <span class="mw-headline" id="Repr.C3.A9sentation_des_graphes"> Représentation des graphes </span></h3>
+<dl><dd> <i><b>Les extraits de codes qui suivent sont donnés à titre 
+indicatif et ne fonctionnent pas forcément (ils ne sont pas complets ni 
+cohérents.)</b></i>
+</dd></dl>
+<p>Il existe plusieurs façon de représenter les graphes, notamment les 
+versions vues en TD d'algo. Je vous propose ici une version plus 
+compacte et plus pratique basée sur la version <i>full-dynamique</i> du TD mais utilisant des tableaux pour la liste de sommet.
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="kw4">typedef</span> <span class="kw4">struct</span> s_graph <span class="sy0">*</span>t_graph<span class="sy0">;</span>
+<span class="kw4">typedef</span> <span class="kw4">struct</span> s_som   <span class="sy0">*</span>t_som<span class="sy0">;</span>
+<span class="kw4">typedef</span> <span class="kw4">struct</span> s_adj   <span class="sy0">*</span>t_adj<span class="sy0">;</span>
+&nbsp;
+<span class="kw4">struct</span> s_som
+<span class="br0">{</span>
+  <span class="kw4">int</span>	som<span class="sy0">;</span>
+  t_adj	succ<span class="sy0">,</span> pred<span class="sy0">;</span>
+<span class="br0">}</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw4">struct</span> s_adj
+<span class="br0">{</span>
+  <span class="kw4">float</span>	cost<span class="sy0">;</span>
+  <span class="kw4">int</span>	vsom<span class="sy0">;</span>
+  t_adj	next<span class="sy0">;</span>
+<span class="br0">}</span><span class="sy0">;</span>
+&nbsp;
+<span class="kw4">struct</span> s_graph
+<span class="br0">{</span>
+  <span class="kw4">int</span>		order<span class="sy0">;</span>
+  t_som		lsom<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="br0">}</span><span class="sy0">;</span></pre></div></div>
+<p>Le graphe est composé d'un tableau de pointeur de sommet (dont la taille est donné par le champ <tt>order</tt>)
+ et chaque sommet contient deux listes d'adjacence (listes d'arcs) pour 
+les successeurs et les prédecesseurs. Les éléments des listes 
+d'adjacence indique le coût (avec un float) et le numéro du sommet (sa 
+case dans le tableau.)
+</p><p>Voici quelques fonctions/macros utiles:
+</p>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="c source-c"><pre class="de1"><span class="co2">#define GSIZE(o) (sizeof(int) + sizeof(t_som)*(o))</span>
+<span class="co2">#define room(g,s) (g-&gt;lsom[(s)])</span>
+<span class="co2">#define succ(g,s) (room(g,s)-&gt;succ)</span>
+<span class="co2">#define pred(g,s) (room(g,s)-&gt;pred)</span>
+<span class="co2">#define next(p) ((p)=(p)-&gt;next)</span>
+&nbsp;
+t_graph create_graph<span class="br0">(</span><span class="kw4">int</span> order<span class="br0">)</span>
+<span class="br0">{</span>
+  t_graph	g<span class="sy0">;</span>
+  <span class="kw4">int</span>		i<span class="sy0">;</span>
+  g <span class="sy0">=</span> <span class="kw3">malloc</span><span class="br0">(</span>GSIZE<span class="br0">(</span>order<span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  g<span class="sy0">-&gt;</span>order <span class="sy0">=</span> order<span class="sy0">;</span>
+  <span class="kw1">for</span> <span class="br0">(</span>i<span class="sy0">=</span><span class="nu0">0</span><span class="sy0">;</span> i<span class="sy0">&lt;</span>order<span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span>
+    <span class="br0">{</span>
+      room<span class="br0">(</span>g<span class="sy0">,</span>i<span class="br0">)</span> <span class="sy0">=</span> <span class="kw3">malloc</span><span class="br0">(</span><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">struct</span> s_som<span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+      room<span class="br0">(</span>g<span class="sy0">,</span>i<span class="br0">)</span><span class="sy0">-&gt;</span>som <span class="sy0">=</span> i<span class="sy0">;</span>
+      succ<span class="br0">(</span>g<span class="sy0">,</span>i<span class="br0">)</span> <span class="sy0">=</span> pred<span class="br0">(</span>g<span class="sy0">,</span>i<span class="br0">)</span> <span class="sy0">=</span> NULL<span class="sy0">;</span>
+    <span class="br0">}</span>
+  <span class="kw1">return</span> g<span class="sy0">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">void</span> add_arc<span class="br0">(</span>t_graph g<span class="sy0">,</span> <span class="kw4">int</span> s<span class="sy0">,</span> <span class="kw4">int</span> d<span class="sy0">,</span> <span class="kw4">float</span> c<span class="br0">)</span>
+<span class="br0">{</span>
+  t_adj		pa<span class="sy0">;</span>
+  pa <span class="sy0">=</span> <span class="kw3">malloc</span><span class="br0">(</span><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">struct</span> s_adj<span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  pa<span class="sy0">-&gt;</span>cost <span class="sy0">=</span> c<span class="sy0">;</span>
+  pa<span class="sy0">-&gt;</span>vsom <span class="sy0">=</span> d<span class="sy0">;</span>
+  pa<span class="sy0">-&gt;</span>next <span class="sy0">=</span> succ<span class="br0">(</span>g<span class="sy0">,</span>s<span class="br0">)</span><span class="sy0">;</span>
+  succ<span class="br0">(</span>g<span class="sy0">,</span>s<span class="br0">)</span> <span class="sy0">=</span> pa<span class="sy0">;</span>
+  pa <span class="sy0">=</span> <span class="kw3">malloc</span><span class="br0">(</span><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">struct</span> s_adj<span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  pa<span class="sy0">-&gt;</span>cost <span class="sy0">=</span> c<span class="sy0">;</span>
+  pa<span class="sy0">-&gt;</span>vsom <span class="sy0">=</span> s<span class="sy0">;</span>
+  pa<span class="sy0">-&gt;</span>next <span class="sy0">=</span> pred<span class="br0">(</span>g<span class="sy0">,</span>d<span class="br0">)</span><span class="sy0">;</span>
+  pred<span class="br0">(</span>g<span class="sy0">,</span>d<span class="br0">)</span> <span class="sy0">=</span> pa<span class="sy0">;</span>
+<span class="br0">}</span></pre></div></div>
+<h3> <span class="mw-headline" id="Plus_courts_chemins"> Plus courts chemins </span></h3>
+<p>Il existe de nombreux algorithme de plus court chemin, mais si vous 
+observez bien notre problème, ces algorithmes ne s'applique pas bien. En
+ effet, Dijkstra et ses variantes ne marchent pas avec des coûts 
+négatifs, or les salles permettant de gagner des points de vie 
+impliquent l'existence de coûts négatifs. L'algorithme de Bellman basé 
+sur le demi-degré intérieur supporte les coûts négatifs mais pas les 
+cycles, or dans certains donjons il peut être nécessaire d'utiliser les 
+circuits absorbants pour arriver à la sortie, ce qui exclut 
+non-seulement Bellman mais aussi Bellman-Ford.
+</p>
+<dl><dd><i>Comment faire&nbsp;?</i>
+</dd></dl>
+<p>La solution est plus simple qu'il n'y parait. En réalité, ce n'est 
+pas un problème d'algorithme, mais un problème de données. En effet, le 
+plus court chemin qui nous intéresse ne dépend pas réellement du coût du
+ chemin (sauf pour rester en vie) mais du nombre de salles traversées.
+</p><p>La solution consiste à effectuer la recherche dans un graphe dérivé de l'original que l'on appelle <i>graphe d'états</i>. Le principe est simple, chaque sommet (ou état) du graphe représente une salle du donjon <b>et</b>
+ le nombre de point de vie de l'explorateur lorsqu'il a visité cette 
+salle. Les arcs décrivent le passage d'une salle à une autre (avec la 
+modification de point de vie correspondante) et ont un coût unique de 1.
+</p><p>Ce graphe représente donc l'ensemble des situations possibles où 
+l'explorateur reste en vie. Il est bien évidement beaucoup plus grand 
+que le donjon. L'avantage de cette méthode est que la recherche du plus 
+court chemin ne fait plus intervenir de coût, <b>on peut donc utiliser Dijkstra ou une de ses variantes (comme A*), voir un simple parcours largeur.</b>
+</p><p>Le graphe d'état étant relativement important (possiblement 
+infini) et dépendant du nombre de points de vie de l'explorateur, on ne 
+cherchera pas à le représenter concrètement, on utilisera plutôt une 
+fonction de transition qui à partir d'une salle et d'un nombre de point 
+de vie fournira un ensemble de couple (salle,point de vie) à partir du 
+graphe du donjon.
+</p><p>Ce graphe peut avoir des circuits: il est tout à fait possible 
+qu'un chemin dans le graphe du donjon nous ramène à une salle déjà 
+visitée avec le même nombre de point de vie. Il est forcément orienté 
+(chaque arc marque la traversée d'un couloir et le gain ou la perte de 
+points de vie correspondant, la traversée dans l'autre sens n'inverse 
+pas ce gain ou cette perte.)
+</p>
+<h4> <span class="mw-headline" id="Exemple"> Exemple </span></h4>
+<p>Soit le donjon suivant:
+</p>
+<pre>ROOMS: 6
+MONSTER: 5 13
+BREWERY: 3 6
+
+TUNNELS
+TUNNEL: 1 1 2
+TUNNEL: 2 1 3
+TUNNEL: 3 1 4
+TUNNEL: 4 1 2
+TUNNEL: 4 1 5
+TUNNEL: 5 1 6
+</pre>
+<p>On veut aller de la salle 1 à la salle 6 avec 10 points de vie. Il va
+ nous falloir passer plusieur fois par la taverne de la salle 3 avant 
+d'avoir suffisamment de points de vie pour passer le monstre de la salle
+ 5. Plus exactement le chemin sera: <tt>[1;2;3;4;2;3;4;5;6]</tt> ce qui correspond aux états: <tt>(1,10), (2,9), (3,14), (4,13), (2,12), (3,17), (4,16), (5,2), (6,1)</tt>.
+</p>
+<h4> <span class="mw-headline" id="Algorithmes_exploitables"> Algorithmes exploitables </span></h4>
+<dl><dt>Parcours largeur
+</dt><dd>donne les plus courts chemins (mais tests beaucoup trop de sommets);
+</dd><dt>Bellman
+</dt><dd>non applicable (présence de cycle);
+</dd><dt>Dijkstra
+</dt><dd>donne les plus courts chemins et en testant moins de sommets qu'un parcours largeur;
+</dd><dt>A*
+</dt><dd>au moins aussi bon que Dijkstra, mais il faut faire attention 
+aux heuristiques choisies, toutes ne permettent pas de trouver le plus 
+court chemin;
+</dd><dt>Bellman-Ford
+</dt><dd>il n'y a pas de circuit absorbant (pas de coût négatif) donc il est applicable mais reste plus couteux que Dijkstra;
+</dd><dt>Les autres ...
+</dt><dd>il existe beaucoup d'autre algorithme de recherche de chemins, 
+notamment, il existe peut être des algorithmes pouvant répondre sur le 
+graphe du donjon ... à vous de voir et de chercher.
+</dd></dl>
+<p>Attention, il existe des optimisations (même sur le parcours largeur) intelligentes sur ces algorithmes.
+</p>
+<h2> <span class="mw-headline" id="Le_tournoi_de_la_guilde_des_donjons"> Le tournoi de la guilde des donjons </span></h2>
+<p>Le but du tournoi est de comparer les performances de vos projets. 
+Bien évidement, seuls les projets dépassant un certain seuil seront 
+inscrit au tournoi.
+</p><p>Pour chaque donjon du tournoi vous obtenez une <i>note</i> contenant deux indicateur: un mallus et votre temps d'exécution. Le mallus est calculé suivant la formule suivante:
+</p>
+<ul><li> 0: si le chemin est valide et minimal
+</li><li> 1: si le chemin est valide mais non minimal
+</li><li> 4: si votre programme atteint le time-out (dans ce cas le temps obtenu ne sera pas utilisé.)
+</li><li> 7: votre programme renvoie un chemin non valide.
+</li><li> 8: votre programme s'arrête sur une erreur.
+</li></ul>
+<p>La note finale pour le classement est un triplet composé de la somme 
+des mallus, le nombre de chemins valides renvoyés et de la moyenne des 
+temps d'exécution. Le classement final est un tri lexicographique sur le
+ triplet <i>(mallus, nombre de chemins valides, temps moyen)</i>. Par 
+conséquent, les projets qui ne répondent pas toujours correctement 
+seront forcément moins bien classé que ceux qui répondent correctement à
+ chaque fois.
+</p>
+<dl><dd><i>(attention, les règles de classements pourraient changer d'ici le tournoi.)</i>
+</dd></dl>
+<p>Pour exemple, voici un donjon qui pourrait être utilisé pour le tournoi:
+</p>
+<pre># Salles
+ROOMS: 22
+MONSTER: 4 4
+MONSTER: 9 80000
+MONSTER: 12 12
+MONSTER: 14 30
+MONSTER: 17 10
+MONSTER: 22 80000
+BREWERY: 16 1
+BREWERY: 18 10
+BREWERY: 7 6
+BREWERY: 11 17
+DEAD: 3
+
+# couloirs
+TUNNELS
+TUNNEL: 1 1 2
+TUNNEL: 1 1 3
+TUNNEL: 2 1 4
+TUNNEL: 2 1 5
+TUNNEL: 3 30 6
+TUNNEL: 4 1 5
+TUNNEL: 5 6 2
+TUNNEL: 5 1 6
+TUNNEL: 6 1 7
+TUNNEL: 7 1 8
+TUNNEL: 8 1 5
+TUNNEL: 8 1 13
+TUNNEL: 8 10 9
+TUNNEL: 6 2 18
+TUNNEL: 9 1 20
+TUNNEL: 9 1000 10
+
+TUNNEL: 5 1 11
+TUNNEL: 11 1 12
+TUNNEL: 12 1 13
+TUNNEL: 13 1 5
+TUNNEL: 13 1 14
+TUNNEL: 14 1 15
+TUNNEL: 15 1 16
+TUNNEL: 16 1 17
+TUNNEL: 17 1 15
+TUNNEL: 17 1 18
+TUNNEL: 18 1 15
+TUNNEL: 17 1 19
+TUNNEL: 19 1 9
+
+TUNNEL: 20 1 19
+TUNNEL: 20 1 18
+TUNNEL: 18 20 20
+TUNNEL: 20 1 21
+TUNNEL: 21 1 22
+TUNNEL: 22 1000 10
+</pre>
+<p>Avec le chemin de 1 à 10 et 10 points de vie au départ. Pour 
+information, le plus court chemin (ou les plus courts chemins) font 
+exactement 162008 sommets.
+</p><p>Ce donjon (variation du précédant) est aussi assez intérressant. 
+Le chemin est plus court (27667 sommets de 1 à 10 avec 3 points de vie),
+ mais les possibilités de boucle sont plus complexes (la différence 
+entre un Dijkstra classique et un A* modifié devient vraiment 
+flagrante.)
+</p>
+<pre># Salles
+ROOMS: 22
+MONSTER: 4 4
+MONSTER: 9 400000
+MONSTER: 12 12
+MONSTER: 14 30
+MONSTER: 17 10
+MONSTER: 22 400000
+BREWERY: 16 1
+BREWERY: 18 50
+BREWERY: 7 6
+BREWERY: 11 17
+DEAD: 3
+
+# couloirs
+TUNNELS
+TUNNEL: 1 1 2
+TUNNEL: 1 1 3
+TUNNEL: 2 1 4
+TUNNEL: 2 1 5
+TUNNEL: 3 30 6
+TUNNEL: 4 1 5
+TUNNEL: 5 6 2
+TUNNEL: 5 1 6
+TUNNEL: 6 1 7
+TUNNEL: 7 1 8
+TUNNEL: 8 1 5
+TUNNEL: 8 1 13
+TUNNEL: 8 10 9
+TUNNEL: 6 2 18
+TUNNEL: 9 1 20
+TUNNEL: 9 1000 10
+
+TUNNEL: 5 1 11
+TUNNEL: 11 1 12
+TUNNEL: 12 1 13
+TUNNEL: 13 1 5
+TUNNEL: 13 1 14
+TUNNEL: 14 1 15
+TUNNEL: 15 1 16
+TUNNEL: 16 1 17
+TUNNEL: 17 1 15
+TUNNEL: 17 1 18
+TUNNEL: 18 1 15
+TUNNEL: 17 1 19
+TUNNEL: 19 1 9
+
+TUNNEL: 20 1 19
+TUNNEL: 20 1 18
+TUNNEL: 18 20 20
+TUNNEL: 20 1 21
+TUNNEL: 21 1 22
+TUNNEL: 22 1000 10
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 220/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikiprog:pcache:idhash:532-0!*!*!!fr!2!* and timestamp 20140417184516 -->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Récupérée de « <a href="http://wiki-prog.infoprepa.epita.fr/index.php?title=MiniProj:C:2014&amp;oldid=2653">http://wiki-prog.infoprepa.epita.fr/index.php?title=MiniProj:C:2014&amp;oldid=2653</a> »				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks catlinks-allhidden"></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>Outils personnels</h5>
+	<ul>
+		<li id="pt-login"><a href="http://wiki-prog.infoprepa.epita.fr/index.php?title=Sp%C3%A9cial:Connexion&amp;returnto=MiniProj%3AC%3A2014" title="Vous êtes encouragé(e) à vous identifier ; ce n’est cependant pas obligatoire. [alt-shift-o]" accesskey="o">Connexion</a></li>
+	</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>Espaces de noms</h5>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="http://wiki-prog.infoprepa.epita.fr/index.php/MiniProj:C:2014" title="Voir la page de contenu [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://wiki-prog.infoprepa.epita.fr/index.php?title=Discussion:MiniProj:C:2014&amp;action=edit&amp;redlink=1" title="Discussion au sujet de cette page de contenu [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>Variantes</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>Affichages</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="http://wiki-prog.infoprepa.epita.fr/index.php/MiniProj:C:2014">Lire</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://wiki-prog.infoprepa.epita.fr/index.php?title=MiniProj:C:2014&amp;action=edit" title="Cette page est protégée.
+Vous pouvez toutefois en visualiser la source. [alt-shift-e]" accesskey="e">Voir le texte source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://wiki-prog.infoprepa.epita.fr/index.php?title=MiniProj:C:2014&amp;action=history" title="Les versions passées de cette page (avec leurs contributeurs) [alt-shift-h]" accesskey="h">Afficher l’historique</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>Actions</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">Rechercher</label></h5>
+	<form action="/index.php" id="searchform">
+		<input name="title" value="Spécial:Recherche" type="hidden">
+				<input autocomplete="off" tabindex="1" name="search" title="Rechercher dans wiki-prog [alt-shift-f]" accesskey="f" id="searchInput" type="search">		<input name="go" value="Lire" title="Aller vers une page portant exactement ce nom si elle existe." id="searchGoButton" class="searchButton" type="submit">		<input name="fulltext" value="Rechercher" title="Rechercher les pages comportant ce texte." id="mw-searchButton" class="searchButton" type="submit">			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint collapsible-nav">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://wiki-prog.infoprepa.epita.fr/skins/common/images/LogoLSE-small.png);" href="http://wiki-prog.infoprepa.epita.fr/index.php/Accueil" title="Page principale"></a></div>
+				<!-- /logo -->
+				
+<!-- Plan -->
+<div class="portal first persistent" id="p-Plan">
+	<h5>Plan</h5>
+	<div class="body">
+		<ul>
+			<li id="n-mainpage-description"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Accueil" title="Aller à l’accueil [alt-shift-z]" accesskey="z">Accueil</a></li>
+			<li id="n-Slides-du-cours"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/EPITA:Cours:Programmation:Slides">Slides du cours</a></li>
+			<li id="n-Cours-de-Programmation"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Cat%C3%A9gorie:EPITA:Cours:Programmation">Cours de Programmation</a></li>
+			<li id="n-Sujets-de-TP"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Cat%C3%A9gorie:EPITA:TP:20132014">Sujets de TP</a></li>
+			<li id="n-Sujets-de-TP-S3.23"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Cat%C3%A9gorie:EPITA:TP:20132014:S3Sharp">Sujets de TP S3#</a></li>
+			<li id="n-Exemples-de-codes-OCaml-et-C"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/ExemplesDeCode">Exemples de codes OCaml et C</a></li>
+			<li id="n-TD-d.27algo"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Algo">TD d'algo</a></li>
+			<li id="n-Archives-des-TP-not.C3.A9s"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/TPNote">Archives des TP notés</a></li>
+			<li id="n-Liens"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Liens">Liens</a></li>
+			<li id="n-recentchanges"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Sp%C3%A9cial:Modifications_r%C3%A9centes" title="Liste des modifications récentes sur le wiki [alt-shift-r]" accesskey="r">Modifications récentes</a></li>
+			<li id="n-currentevents"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Wiki-prog:Actualit%C3%A9s" title="Trouver les informations de fond sur l’actualité du moment">Actualités</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Plan -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- TOOLBOX -->
+<div class="portal expanded" id="p-tb">
+	<h5 tabindex="2">Boîte à outils</h5>
+	<div style="display: block;" class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Sp%C3%A9cial:Pages_li%C3%A9es/MiniProj:C:2014" title="Liste des pages liées à celle-ci [alt-shift-j]" accesskey="j">Pages liées</a></li>
+			<li id="t-recentchangeslinked"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Sp%C3%A9cial:Suivi_des_liens/MiniProj:C:2014" title="Liste des modifications récentes des pages liées à celle-ci [alt-shift-k]" accesskey="k">Suivi des pages liées</a></li>
+			<li id="t-specialpages"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Sp%C3%A9cial:Pages_sp%C3%A9ciales" title="Liste de toutes les pages spéciales [alt-shift-q]" accesskey="q">Pages spéciales</a></li>
+			<li><a href="http://wiki-prog.infoprepa.epita.fr/index.php?title=MiniProj:C:2014&amp;printable=yes" rel="alternate">Version imprimable</a></li>
+			<li id="t-permalink"><a href="http://wiki-prog.infoprepa.epita.fr/index.php?title=MiniProj:C:2014&amp;oldid=2653" title="Lien permanent vers cette version de la page">Adresse de cette version</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Dernière modification de cette page le 13 avril 2014 à 17:27.<br></li>
+											<li id="footer-info-viewcount">Cette page a été consultée 318 fois.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Wiki-prog:Confidentialit%C3%A9" title="Wiki-prog:Confidentialité">Politique de confidentialité</a></li>
+											<li id="footer-places-about"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Wiki-prog:%C3%80_propos" title="Wiki-prog:À propos">À propos de wiki-prog</a></li>
+											<li id="footer-places-disclaimer"><a href="http://wiki-prog.infoprepa.epita.fr/index.php/Wiki-prog:Avertissements_g%C3%A9n%C3%A9raux" title="Wiki-prog:Avertissements généraux">Avertissements</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="MiniProj:C:2014%20-%20wiki-prog_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<script src="MiniProj:C:2014%20-%20wiki-prog_files/load_006.php"></script>
+<script>if(window.mw){
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.simpleSearch"]);
+}
+</script><script type="text/javascript" src="MiniProj:C:2014%20-%20wiki-prog_files/load_005.php"></script><script type="text/javascript" src="MiniProj:C:2014%20-%20wiki-prog_files/load.php"></script>
+<script>if(window.mw){
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"variant":"fr","language":"fr","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: wikiprog:resourceloader:filter:minify-js:4:40570fa6013ab5f26e515e9dd2620108 */
+}
+</script><!-- Served in 0.116 secs. -->
+	
+
+<div class="suggestions" style="top: 79px; width: 232px; display: none; left: auto; right: 168.517px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body></html>

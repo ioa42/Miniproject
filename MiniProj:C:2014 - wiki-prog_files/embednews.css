@@ -1,0 +1,64 @@
+#cal table {
+	width:100%;
+  	color:	#3b3131;
+	border:1px;
+	padding:0px;
+	margin:0px;
+}
+
+
+#cal .calevent {
+	color: green;   
+} 
+
+
+#cal .today {
+	font-weight:bold;
+	
+}
+
+
+#cal .nextmonth {
+	color:	gray;
+}
+
+
+#cal .lastmonth {
+	color:	gray;
+}
+
+#cal .currentmonth {}
+
+
+#cal a {
+	display:block;
+} 
+   
+
+#cal .daysofweek {
+	border-bottom:1px;
+	border-bottom-style:dashed;
+	width:18%;   
+}
+
+
+#cal tr {}
+
+
+#cal td {}
+
+
+#cal a {
+	color: green;
+}
+
+
+#cal a:visited {
+	color: blue;
+}
+
+
+#cal a:hover {
+	color: red;
+}
+
