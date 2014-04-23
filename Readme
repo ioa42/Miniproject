@@ -1,0 +1,5 @@
+Mini project for epita.
+
+The goal is to find the shortest path out of a labyrinth (composed of rooms and tunnels).
+The catch is each room has a certain cost and you have a certain life.
+Of course there can be negative cycles...
