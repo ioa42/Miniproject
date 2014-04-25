@@ -1,0 +1,2 @@
+set exec-wrapper env 'LD_PRELOAD=./libmalloc.so'
+r -q params
